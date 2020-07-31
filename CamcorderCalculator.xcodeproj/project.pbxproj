@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D71ABFDF25207A0F00E7C62E /* PreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ABFDE25207A0F00E7C62E /* PreviewItem.swift */; };
+		D71ABFE325207E9A00E7C62E /* UIAlertController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71ABFE225207E9A00E7C62E /* UIAlertController+Extensions.swift */; };
+		D71ABFFD2520C6D200E7C62E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = D71ABFFC2520C6D200E7C62E /* FirebaseStorage */; };
+		D71AC0002520C75700E7C62E /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = D71ABFFF2520C75700E7C62E /* FirebaseInstallations */; };
+		D71AC0022520C75E00E7C62E /* FirebaseStorageSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D71AC0012520C75E00E7C62E /* FirebaseStorageSwift */; };
+		D71AC0082520CA2500E7C62E /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = D71AC0072520CA2500E7C62E /* FirebaseDatabase */; };
+		D71AC00E2520D04200E7C62E /* FirebaseCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71AC00D2520D04200E7C62E /* FirebaseCalculation.swift */; };
+		D71AC0112520D21C00E7C62E /* FirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D71AC0102520D21C00E7C62E /* FirebaseStore.swift */; };
+		D71AC0162520FFB900E7C62E /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D71AC0152520FFB900E7C62E /* IQKeyboardManagerSwift */; };
+		D75162F224D70EAA0054673A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162F124D70EAA0054673A /* LoginViewController.swift */; };
+		D75162F724D88EA00054673A /* CalculationOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162F624D88EA00054673A /* CalculationOptions.swift */; };
+		D75162F924D88F390054673A /* Calculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162F824D88F390054673A /* Calculation.swift */; };
+		D75162FB24D88FEA0054673A /* TestCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162FA24D88FEA0054673A /* TestCalculation.swift */; };
+		D75162FD24D892640054673A /* CalculationFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162FC24D892640054673A /* CalculationFabric.swift */; };
+		D75162FF24D892A40054673A /* BaseCalculationFabric.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75162FE24D892A40054673A /* BaseCalculationFabric.swift */; };
+		D751630224D9F3BA0054673A /* Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D751630124D9F3BA0054673A /* Calculatable.swift */; };
+		D751630424DB52480054673A /* UINavigationController+Calculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D751630324DB52480054673A /* UINavigationController+Calculatable.swift */; };
+		D77045C7251158CD00A102B5 /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C0251158CD00A102B5 /* ListItem.swift */; };
+		D77045C8251158CD00A102B5 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C1251158CD00A102B5 /* Footer.swift */; };
+		D77045C9251158CD00A102B5 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C2251158CD00A102B5 /* Header.swift */; };
+		D77045CA251158CD00A102B5 /* ContentBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C3251158CD00A102B5 /* ContentBlock.swift */; };
+		D77045CB251158CD00A102B5 /* Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C4251158CD00A102B5 /* Content.swift */; };
+		D77045CC251158CD00A102B5 /* PDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C5251158CD00A102B5 /* PDF.swift */; };
+		D77045CD251158CD00A102B5 /* ListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045C6251158CD00A102B5 /* ListHeader.swift */; };
+		D77045CF25115A2700A102B5 /* PDFBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77045CE25115A2700A102B5 /* PDFBuilder.swift */; };
+		D79455B724D4A540002E5763 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455B624D4A540002E5763 /* AppDelegate.swift */; };
+		D79455B924D4A540002E5763 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455B824D4A540002E5763 /* SceneDelegate.swift */; };
+		D79455BB24D4A540002E5763 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455BA24D4A540002E5763 /* CalculatorViewController.swift */; };
+		D79455BE24D4A540002E5763 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79455BC24D4A540002E5763 /* Main.storyboard */; };
+		D79455C024D4A541002E5763 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D79455BF24D4A541002E5763 /* Assets.xcassets */; };
+		D79455C324D4A541002E5763 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D79455C124D4A541002E5763 /* LaunchScreen.storyboard */; };
+		D79455CC24D4AD5A002E5763 /* SeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455CB24D4AD5A002E5763 /* SeparatorView.swift */; };
+		D79455CE24D6DA79002E5763 /* CalculationResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455CD24D6DA79002E5763 /* CalculationResultViewController.swift */; };
+		D79455D124D6E874002E5763 /* UITextField+KeyboardDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79455D024D6E874002E5763 /* UITextField+KeyboardDoneButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D71ABFDE25207A0F00E7C62E /* PreviewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewItem.swift; sourceTree = "<group>"; };
+		D71ABFE225207E9A00E7C62E /* UIAlertController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extensions.swift"; sourceTree = "<group>"; };
+		D71AC00D2520D04200E7C62E /* FirebaseCalculation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseCalculation.swift; sourceTree = "<group>"; };
+		D71AC0102520D21C00E7C62E /* FirebaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStore.swift; sourceTree = "<group>"; };
+		D75162F124D70EAA0054673A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D75162F624D88EA00054673A /* CalculationOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationOptions.swift; sourceTree = "<group>"; };
+		D75162F824D88F390054673A /* Calculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculation.swift; sourceTree = "<group>"; };
+		D75162FA24D88FEA0054673A /* TestCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCalculation.swift; sourceTree = "<group>"; };
+		D75162FC24D892640054673A /* CalculationFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationFabric.swift; sourceTree = "<group>"; };
+		D75162FE24D892A40054673A /* BaseCalculationFabric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCalculationFabric.swift; sourceTree = "<group>"; };
+		D751630124D9F3BA0054673A /* Calculatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculatable.swift; sourceTree = "<group>"; };
+		D751630324DB52480054673A /* UINavigationController+Calculatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+Calculatable.swift"; sourceTree = "<group>"; };
+		D77045C0251158CD00A102B5 /* ListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		D77045C1251158CD00A102B5 /* Footer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		D77045C2251158CD00A102B5 /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		D77045C3251158CD00A102B5 /* ContentBlock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentBlock.swift; sourceTree = "<group>"; };
+		D77045C4251158CD00A102B5 /* Content.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Content.swift; sourceTree = "<group>"; };
+		D77045C5251158CD00A102B5 /* PDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDF.swift; sourceTree = "<group>"; };
+		D77045C6251158CD00A102B5 /* ListHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListHeader.swift; sourceTree = "<group>"; };
+		D77045CE25115A2700A102B5 /* PDFBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDFBuilder.swift; sourceTree = "<group>"; };
+		D79455B324D4A53F002E5763 /* CamcorderCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CamcorderCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D79455B624D4A540002E5763 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D79455B824D4A540002E5763 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D79455BA24D4A540002E5763 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		D79455BD24D4A540002E5763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D79455BF24D4A541002E5763 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D79455C224D4A541002E5763 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D79455C424D4A541002E5763 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D79455CB24D4AD5A002E5763 /* SeparatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeparatorView.swift; sourceTree = "<group>"; };
+		D79455CD24D6DA79002E5763 /* CalculationResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationResultViewController.swift; sourceTree = "<group>"; };
+		D79455D024D6E874002E5763 /* UITextField+KeyboardDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+KeyboardDoneButton.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D79455B024D4A53F002E5763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D71AC0162520FFB900E7C62E /* IQKeyboardManagerSwift in Frameworks */,
+				D71ABFFD2520C6D200E7C62E /* FirebaseStorage in Frameworks */,
+				D71AC0002520C75700E7C62E /* FirebaseInstallations in Frameworks */,
+				D71AC0082520CA2500E7C62E /* FirebaseDatabase in Frameworks */,
+				D71AC0022520C75E00E7C62E /* FirebaseStorageSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D71ABFFB2520C6D200E7C62E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D75162F324D88E370054673A /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				D71AC0102520D21C00E7C62E /* FirebaseStore.swift */,
+				D75162F824D88F390054673A /* Calculation.swift */,
+				D75162FA24D88FEA0054673A /* TestCalculation.swift */,
+				D71AC00D2520D04200E7C62E /* FirebaseCalculation.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		D75162F424D88E450054673A /* Fabrics */ = {
+			isa = PBXGroup;
+			children = (
+				D75162FC24D892640054673A /* CalculationFabric.swift */,
+				D75162FE24D892A40054673A /* BaseCalculationFabric.swift */,
+			);
+			path = Fabrics;
+			sourceTree = "<group>";
+		};
+		D75162F524D88E770054673A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D75162F624D88EA00054673A /* CalculationOptions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D77045BF251158CD00A102B5 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				D77045CE25115A2700A102B5 /* PDFBuilder.swift */,
+				D77045C0251158CD00A102B5 /* ListItem.swift */,
+				D77045C1251158CD00A102B5 /* Footer.swift */,
+				D77045C2251158CD00A102B5 /* Header.swift */,
+				D77045C3251158CD00A102B5 /* ContentBlock.swift */,
+				D77045C4251158CD00A102B5 /* Content.swift */,
+				D77045C5251158CD00A102B5 /* PDF.swift */,
+				D77045C6251158CD00A102B5 /* ListHeader.swift */,
+				D71ABFDE25207A0F00E7C62E /* PreviewItem.swift */,
+			);
+			path = PDF;
+			sourceTree = "<group>";
+		};
+		D79455AA24D4A53F002E5763 = {
+			isa = PBXGroup;
+			children = (
+				D79455B524D4A53F002E5763 /* CamcorderCalculator */,
+				D79455B424D4A53F002E5763 /* Products */,
+				D71ABFFB2520C6D200E7C62E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D79455B424D4A53F002E5763 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D79455B324D4A53F002E5763 /* CamcorderCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D79455B524D4A53F002E5763 /* CamcorderCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				D77045BF251158CD00A102B5 /* PDF */,
+				D751630124D9F3BA0054673A /* Calculatable.swift */,
+				D75162F524D88E770054673A /* Models */,
+				D75162F424D88E450054673A /* Fabrics */,
+				D75162F324D88E370054673A /* Interactors */,
+				D79455CF24D6E809002E5763 /* Extensions */,
+				D79455CA24D4AD22002E5763 /* UI */,
+				D79455B624D4A540002E5763 /* AppDelegate.swift */,
+				D79455B824D4A540002E5763 /* SceneDelegate.swift */,
+				D79455BC24D4A540002E5763 /* Main.storyboard */,
+				D79455BF24D4A541002E5763 /* Assets.xcassets */,
+				D79455C124D4A541002E5763 /* LaunchScreen.storyboard */,
+				D79455C424D4A541002E5763 /* Info.plist */,
+			);
+			path = CamcorderCalculator;
+			sourceTree = "<group>";
+		};
+		D79455CA24D4AD22002E5763 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D79455BA24D4A540002E5763 /* CalculatorViewController.swift */,
+				D79455CB24D4AD5A002E5763 /* SeparatorView.swift */,
+				D79455CD24D6DA79002E5763 /* CalculationResultViewController.swift */,
+				D75162F124D70EAA0054673A /* LoginViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		D79455CF24D6E809002E5763 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D79455D024D6E874002E5763 /* UITextField+KeyboardDoneButton.swift */,
+				D751630324DB52480054673A /* UINavigationController+Calculatable.swift */,
+				D71ABFE225207E9A00E7C62E /* UIAlertController+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D79455B224D4A53F002E5763 /* CamcorderCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D79455C724D4A541002E5763 /* Build configuration list for PBXNativeTarget "CamcorderCalculator" */;
+			buildPhases = (
+				D79455AF24D4A53F002E5763 /* Sources */,
+				D79455B024D4A53F002E5763 /* Frameworks */,
+				D79455B124D4A53F002E5763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CamcorderCalculator;
+			packageProductDependencies = (
+				D71ABFFC2520C6D200E7C62E /* FirebaseStorage */,
+				D71ABFFF2520C75700E7C62E /* FirebaseInstallations */,
+				D71AC0012520C75E00E7C62E /* FirebaseStorageSwift */,
+				D71AC0072520CA2500E7C62E /* FirebaseDatabase */,
+				D71AC0152520FFB900E7C62E /* IQKeyboardManagerSwift */,
+			);
+			productName = CamcorderCalculator;
+			productReference = D79455B324D4A53F002E5763 /* CamcorderCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D79455AB24D4A53F002E5763 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Гончаров Денис Васильевич";
+				TargetAttributes = {
+					D79455B224D4A53F002E5763 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = D79455AE24D4A53F002E5763 /* Build configuration list for PBXProject "CamcorderCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D79455AA24D4A53F002E5763;
+			packageReferences = (
+				D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D71AC0142520FFB900E7C62E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = D79455B424D4A53F002E5763 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D79455B224D4A53F002E5763 /* CamcorderCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D79455B124D4A53F002E5763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D79455C324D4A541002E5763 /* LaunchScreen.storyboard in Resources */,
+				D79455C024D4A541002E5763 /* Assets.xcassets in Resources */,
+				D79455BE24D4A540002E5763 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D79455AF24D4A53F002E5763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D77045C7251158CD00A102B5 /* ListItem.swift in Sources */,
+				D75162F724D88EA00054673A /* CalculationOptions.swift in Sources */,
+				D75162F924D88F390054673A /* Calculation.swift in Sources */,
+				D75162F224D70EAA0054673A /* LoginViewController.swift in Sources */,
+				D75162FD24D892640054673A /* CalculationFabric.swift in Sources */,
+				D75162FB24D88FEA0054673A /* TestCalculation.swift in Sources */,
+				D77045CC251158CD00A102B5 /* PDF.swift in Sources */,
+				D77045C8251158CD00A102B5 /* Footer.swift in Sources */,
+				D79455BB24D4A540002E5763 /* CalculatorViewController.swift in Sources */,
+				D71ABFDF25207A0F00E7C62E /* PreviewItem.swift in Sources */,
+				D77045C9251158CD00A102B5 /* Header.swift in Sources */,
+				D77045CD251158CD00A102B5 /* ListHeader.swift in Sources */,
+				D751630424DB52480054673A /* UINavigationController+Calculatable.swift in Sources */,
+				D79455B724D4A540002E5763 /* AppDelegate.swift in Sources */,
+				D75162FF24D892A40054673A /* BaseCalculationFabric.swift in Sources */,
+				D79455CE24D6DA79002E5763 /* CalculationResultViewController.swift in Sources */,
+				D71AC0112520D21C00E7C62E /* FirebaseStore.swift in Sources */,
+				D71AC00E2520D04200E7C62E /* FirebaseCalculation.swift in Sources */,
+				D79455CC24D4AD5A002E5763 /* SeparatorView.swift in Sources */,
+				D77045CB251158CD00A102B5 /* Content.swift in Sources */,
+				D71ABFE325207E9A00E7C62E /* UIAlertController+Extensions.swift in Sources */,
+				D79455D124D6E874002E5763 /* UITextField+KeyboardDoneButton.swift in Sources */,
+				D77045CF25115A2700A102B5 /* PDFBuilder.swift in Sources */,
+				D79455B924D4A540002E5763 /* SceneDelegate.swift in Sources */,
+				D751630224D9F3BA0054673A /* Calculatable.swift in Sources */,
+				D77045CA251158CD00A102B5 /* ContentBlock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D79455BC24D4A540002E5763 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79455BD24D4A540002E5763 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D79455C124D4A541002E5763 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D79455C224D4A541002E5763 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D79455C524D4A541002E5763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D79455C624D4A541002E5763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D79455C824D4A541002E5763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48K73F3AMW;
+				INFOPLIST_FILE = CamcorderCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goncharov-dva.CamcorderCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D79455C924D4A541002E5763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48K73F3AMW;
+				INFOPLIST_FILE = CamcorderCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goncharov-dva.CamcorderCalculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D79455AE24D4A53F002E5763 /* Build configuration list for PBXProject "CamcorderCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79455C524D4A541002E5763 /* Debug */,
+				D79455C624D4A541002E5763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D79455C724D4A541002E5763 /* Build configuration list for PBXNativeTarget "CamcorderCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D79455C824D4A541002E5763 /* Debug */,
+				D79455C924D4A541002E5763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = "6.33-spm-beta";
+				kind = branch;
+			};
+		};
+		D71AC0142520FFB900E7C62E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D71ABFFC2520C6D200E7C62E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		D71ABFFF2520C75700E7C62E /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		D71AC0012520C75E00E7C62E /* FirebaseStorageSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorageSwift;
+		};
+		D71AC0072520CA2500E7C62E /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71ABFF62520C54B00E7C62E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		D71AC0152520FFB900E7C62E /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D71AC0142520FFB900E7C62E /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D79455AB24D4A53F002E5763 /* Project object */;
+}
